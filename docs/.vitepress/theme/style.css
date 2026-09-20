@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* VitePress toggles dark mode by adding `.dark` to a container ancestor, not via
+   prefers-color-scheme. Tell Tailwind's dark: variant to match, or dark: utilities never fire. */
+@custom-variant dark (&:is(.dark *));
+
+/* CHANGE ME: your brand colour. Feeds both Tailwind's utilities (bg-brand-600, text-brand-600,
+   etc.) and VitePress's own accent colour (the second block below) from one value. A muted
+   Aegean blue-teal, chosen for a coastal villa; swap for whatever matches yours. */
+@theme {
+  --color-brand-50: #eaf6f8;
+  --color-brand-500: #0f6f8c;
+  --color-brand-600: #0c5870;
+}
+
+:root {
+  --vp-c-brand-1: #0f6f8c;
+  --vp-c-brand-2: #0c5870;
+  --vp-c-brand-3: #0a4a5c;
+}
