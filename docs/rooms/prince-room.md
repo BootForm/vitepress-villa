@@ -20,9 +20,9 @@ const { frontmatter } = useData()
 <img :src="withBase(frontmatter.image)" alt="" class="aspect-video w-full object-cover">
 
 <div class="mx-auto flex max-w-2xl flex-wrap gap-2 px-6 pt-8">
-<span class="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-600 dark:bg-brand-500/20 dark:text-brand-500">Sleeps {{ frontmatter.sleeps }}</span>
-<span class="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-600 dark:bg-brand-500/20 dark:text-brand-500">{{ frontmatter.bed }}</span>
-<span class="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-600 dark:bg-brand-500/20 dark:text-brand-500">{{ frontmatter.view }}</span>
+<span class="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-600 dark:bg-brand-500/30 dark:text-white/90">Sleeps {{ frontmatter.sleeps }}</span>
+<span class="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-600 dark:bg-brand-500/30 dark:text-white/90">{{ frontmatter.bed }}</span>
+<span class="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-medium text-brand-600 dark:bg-brand-500/30 dark:text-white/90">{{ frontmatter.view }}</span>
 </div>
 
 <div class="prose dark:prose-invert mx-auto max-w-2xl px-6 pb-16 pt-4">
