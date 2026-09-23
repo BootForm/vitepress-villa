@@ -29,8 +29,8 @@ onUnmounted(() => window.removeEventListener('keydown', onKeydown))
 
 <div class="mx-auto max-w-6xl px-6 py-16">
 
-<h1 class="mb-2 text-3xl! font-bold! tracking-tight">Gallery</h1>
-<p class="mb-8 text-black/70! dark:text-white/70!">The villa, the pool, and the coast around it. Click any photo to see it full screen.</p>
+<h1 class="mb-2! text-3xl! font-bold! tracking-tight">Gallery</h1>
+<p class="mb-8! text-black/70! dark:text-white/70!">The villa, the pool, and the coast around it. Click any photo to see it full screen.</p>
 
 <div class="columns-1 gap-4 sm:columns-2 lg:columns-3 [&>img]:mb-4 [&>img]:w-full [&>img]:cursor-zoom-in [&>img]:rounded-lg [&>img]:break-inside-avoid [&>img]:transition [&>img]:hover:opacity-90">
   <img :src="withBase('/gallery/1.jpg')" alt="" @click="openImage = withBase('/gallery/1.jpg')">
