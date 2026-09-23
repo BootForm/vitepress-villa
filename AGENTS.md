@@ -52,6 +52,15 @@ already do this throughout; keep doing it in anything new, and confirm with a re
 and a look at the actual rendered page (or its computed styles) rather than assuming a class took
 effect.
 
+**`prose` blocks are the one exception, handled once in `style.css`.** The same unlayered
+resets (VitePress's own `base.css`: `h1`-`h6` at 16px, `p` and lists with no margin, lists with no
+bullets, links with no colour) also flatten every `prose` block, and `!` can't fix that, because
+`prose` styles child elements the markdown gives you no class on. Confirmed live 2026-09-23: every
+`# Heading` in a `prose` wrapper rendered at body size, with no paragraph spacing. The last rule in
+`docs/.vitepress/theme/style.css` fixes it with `revert-layer`, handing exactly those properties
+back to the layered `prose` rules, scoped to `.prose` and skipping `not-prose`. Keep that rule;
+markdown inside a `prose` wrapper needs no `!` classes of its own.
+
 ## Adding a new kind of content
 
 Want a section this template doesn't have yet, such as books, team members, events, or services?
