@@ -33,8 +33,8 @@ const featuredRooms = rooms.slice(0, 3)
       Book directly with us, no platform fees.
     </p>
     <div class="mt-6 flex flex-wrap justify-center gap-3">
-      <a href="/rooms/" class="rounded-md bg-brand-500 px-5 py-2.5 font-medium text-white! no-underline! hover:bg-brand-600">See the rooms</a>
-      <a href="/contact" class="rounded-md bg-white/10 px-5 py-2.5 font-medium text-white! no-underline! ring-1 ring-white/40 hover:bg-white/20">Check availability</a>
+      <a :href="withBase('/rooms/')" class="rounded-md bg-brand-500 px-5 py-2.5 font-medium text-white! no-underline! hover:bg-brand-600">See the rooms</a>
+      <a :href="withBase('/contact')" class="rounded-md bg-white/10 px-5 py-2.5 font-medium text-white! no-underline! ring-1 ring-white/40 hover:bg-white/20">Check availability</a>
     </div>
   </div>
 </div>
@@ -105,7 +105,7 @@ const featuredRooms = rooms.slice(0, 3)
 
 <p class="mt-6 text-center">
 
-[See all 5 rooms](/rooms/)
+[See all rooms](/rooms/)
 
 </p>
 

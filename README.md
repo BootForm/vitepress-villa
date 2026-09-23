@@ -134,6 +134,9 @@ form, built the way VitePress is meant to be used for this, not the docs-site de
 
 ### Where to go next
 
+- [`add-collection`](https://github.com/BootForm/site-skills/tree/main/plugins/vitepress-sites/skills/add-collection)
+  to add a new kind of content (books, team members, events) with its own listing page and a
+  page per entry. Works with Claude Code, or as a step-by-step you can follow by hand.
 - [`AGENTS.md`](AGENTS.md) if you're working on this with an AI coding agent: the conventions this
   template follows, and the gotchas already hit building it.
 - [`vitepress-blog`](https://github.com/BootForm/vitepress-blog) for more on how the journal's
