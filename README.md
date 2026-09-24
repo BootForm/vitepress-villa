@@ -31,7 +31,7 @@ Click **Use this template**, then **Create a new repository**. Name it `vitepres
 whatever you like.
 
 > **Naming it something other than `vitepress-villa`?** Open `docs/.vitepress/config.mts` and
-> change `base: '/vitepress-villa/'` to match (`/your-repo-name/`), and do the same for `SITE_URL`
+> change `base: '/vitepress-villa/'` (and the favicon path under `head`, in the same file) to match (`/your-repo-name/`), and do the same for `SITE_URL`
 > in `scripts/generate-rss.mjs`. Get either wrong and the site (or its RSS feed) looks broken in a
 > way that only shows up once deployed, not in `npm run dev`.
 
@@ -134,9 +134,11 @@ form, built the way VitePress is meant to be used for this, not the docs-site de
 
 ### Where to go next
 
-- [`add-collection`](https://github.com/BootForm/site-skills/tree/main/plugins/vitepress-sites/skills/add-collection)
-  to add a new kind of content (books, team members, events) with its own listing page and a
-  page per entry. Works with Claude Code, or as a step-by-step you can follow by hand.
+- [`site-skills`](https://github.com/BootForm/site-skills) if you use Claude Code: commands to add
+  page sections, add a new kind of content (books, team members, events), change the theme and
+  swap icons, all following this template's conventions.
+- [`site-sections`](https://bootform.github.io/site-sections/) for copy-paste page sections (heroes,
+  pricing, FAQs, footers) that survive VitePress's own styles.
 - [`AGENTS.md`](AGENTS.md) if you're working on this with an AI coding agent: the conventions this
   template follows, and the gotchas already hit building it.
 - [`vitepress-blog`](https://github.com/BootForm/vitepress-blog) for more on how the journal's
