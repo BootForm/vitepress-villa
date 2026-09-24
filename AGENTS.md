@@ -61,15 +61,23 @@ bullets, links with no colour) also flatten every `prose` block, and `!` can't f
 back to the layered `prose` rules, scoped to `.prose` and skipping `not-prose`. Keep that rule;
 markdown inside a `prose` wrapper needs no `!` classes of its own.
 
-## Adding a new kind of content
+## Growing the site with Claude Code
 
-Want a section this template doesn't have yet, such as books, team members, events, or services?
-Use the `add-collection` skill from [`BootForm/site-skills`](https://github.com/BootForm/site-skills)
-(`/plugin marketplace add BootForm/site-skills`, then `/plugin install vitepress-sites@site-skills`).
-It copies a shared card component, an entry header, a data loader and a listing page into this
-repo, following every convention in this file, so each new entry afterwards is one markdown file.
-The same files and steps are readable without the plugin, under
-`plugins/vitepress-sites/skills/add-collection/` in that repo. Leave the existing rooms and journal as they are; a new collection sits alongside them.
+The `vitepress` plugin in [`BootForm/site-skills`](https://github.com/BootForm/site-skills)
+(`/plugin marketplace add BootForm/site-skills`, then `/plugin install vitepress@site-skills`)
+knows this template's conventions:
+
+- `/vitepress:add-section`: a hero, features, testimonials, pricing, an FAQ and more, from
+  [site-sections](https://bootform.github.io/site-sections/), written to survive VitePress's own
+  styles.
+- `/vitepress:add-collection`: a new kind of content (books, team members, events, services) with
+  a listing page and a page per entry, so each new entry is one markdown file. Leave the existing rooms and journal as they are; a new collection sits alongside them.
+- `/vitepress:theme`: brand colour (both token blocks, with a contrast check), fonts, corner
+  roundness, logo and favicon.
+- `/vitepress:icons`: icons from the openly licensed Lucide set, and the header's social links.
+
+Every skill's steps are readable without the plugin, under `plugins/vitepress/skills/` in that
+repo, and site-sections' snippets can be copied straight from its gallery.
 
 ## Writing style
 
