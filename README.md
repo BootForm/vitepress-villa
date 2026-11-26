@@ -145,3 +145,9 @@ form, built the way VitePress is meant to be used for this, not the docs-site de
   generated post list, tags, and RSS actually work.
 - [`form-styles`](https://bootform.github.io/form-styles/) for more input types and layouts to
   style the contact form with.
+
+## Like it?
+
+If this saved you some time, a star on this repo helps other people find it. Everything else
+BootForm publishes is at [github.com/BootForm](https://github.com/BootForm): more templates, form
+styles and page sections, all free to copy.
